@@ -39,14 +39,6 @@
 </div>
 
 <div class="d-flex col-12 justify-content-center">
-
-  <div class="navbar navbar-light bg-light">
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="text" placeholder="what would you like to cook?">
-      <button class="btn btn-outline-success my-3 my-sm-0" type="submit"> cook away</button>
-    </form>
-  </div>
-
   <div class="form-check form-check-inline">
     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
     <label class="form-check-label" for="inlineCheckbox1">burgerKinger</label>
@@ -64,7 +56,72 @@
     <label class="form-check-label" for="inlineCheckbox2">vegan</label>
   </div>
 
+  <div class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="text" placeholder="what would you like to cook?">
+      <button class="btn btn-outline-success my-3 my-sm-0" type="submit"> cook away</button>
+    </form>
+  </div>
+
+  
 </div>
+
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>iRecipe Generator</h3>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="password-length">Password Length:</label>
+            <input type="number" min="8" max="20" class="form-control" id="password-length" value="8">
+          </div>
+          <div class="form-group">
+            <label for="password-options">Password Options:</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="uppercase-option">
+              <label class="form-check-label" for="uppercase-option">Include Uppercase Letters</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="lowercase-option">
+              <label class="form-check-label" for="lowercase-option">Include Lowercase Letters</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="numbers-option">
+              <label class="form-check-label" for="numbers-option">Include Numbers</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="symbols-option">
+              <label class="form-check-label" for="symbols-option">Include Symbols</label>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="generate-button">Generate Password</button>
+          <div class="form-group mt-3">
+            <label for="generated-password">Generated Password:</label>
+            <input type="text" class="form-control" id="generated-password" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <!-- looking for some inspiration -->
 <div class="d-flex justify-content-center">
