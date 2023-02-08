@@ -1,0 +1,33 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero{
+    background: url(../assets/img/image-1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    animation: scroll-bg 10s linear infinite;
+}
+/* @keyframes scroll-bg {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 -100%;
+    }
+} */
+
+.hero p{
+    font-style: initial;
+
+    color: rgb(41, 20, 61);
+}
+
+#getInspired .card img{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 200px;
+
+}
