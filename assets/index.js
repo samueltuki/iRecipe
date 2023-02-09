@@ -1,3 +1,4 @@
+
 let userInput = "pasta";
 const options = {
 	method: 'GET',
@@ -7,7 +8,10 @@ const options = {
 	}
 };
 
+let recipeChK = document.getElementById("recipesCheck");
+
 fetch('https://yummly2.p.rapidapi.com/feeds/search?start=0&maxResult=5&q=' + userInput , options)
+
 
 	.then(response => response.json())
 	.then(response => {
@@ -20,3 +24,4 @@ for (let i = 0; i < response.feed.length; i++) {
     
   }
   }});
+
