@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    }
+
+.h2Title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 600;
+    color: #918783 ;
+}
+
+
+=======
 
 html {
     scroll-behavior: smooth;
@@ -51,3 +67,4 @@ h3 {
 
  
  
+>>>>>>> 984e3fb7668fdaa41cb192432c7e8ac4ac8052af
