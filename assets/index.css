@@ -3,11 +3,9 @@ html {
     scroll-behavior: smooth;
   }
 
-.hero{
-    background: url(../assets/img/image-1.jpg) ;
+  body{
+    background-image: url(./img/image-3.png);
     background-size: cover;
-    background-position: center;
-    height: 500px;
     animation: scroll-bg 10s linear infinite;
 }
 /* @keyframes scroll-bg {
@@ -18,11 +16,23 @@ html {
         background-position: 0 -100%;
     }
 } */
+  
+ul{
+    font-weight: bold;
+    display: flex;
+  justify-content: ;
+}
+
+.hero {
+    opacity: 0.5;
+}
 
 .hero p{
-    font-style: initial;
+   font-weight:500;
+   word-wrap: break-word;
+   max-width: 40%;
 
-    color: rgb(41, 20, 61);
+    color: rgb(0, 0, 0);
 }
 
 #getInspired .card img{
