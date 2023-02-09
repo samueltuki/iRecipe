@@ -20,7 +20,10 @@ html {
 ul{
     font-weight: bold;
     display: flex;
-  justify-content: ;
+}
+
+ul:hover{
+    color: rgb(246, 246, 3);
 }
 
 .hero {
@@ -31,8 +34,7 @@ ul{
    font-weight:500;
    word-wrap: break-word;
    max-width: 40%;
-
-    color: rgb(0, 0, 0);
+   color: rgb(0, 0, 0);
 }
 
 #getInspired .card img{
@@ -41,3 +43,4 @@ ul{
     height: 200px;
 
 }
+h3 { color: blanchedalmond;}
