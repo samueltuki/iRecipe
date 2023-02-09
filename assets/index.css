@@ -9,7 +9,7 @@
     margin-bottom: 40px;
     font-size: 48px;
     font-weight: 600;
-    color: #918783 ;
+    color: white ;
 }
 
 
@@ -65,6 +65,22 @@ h3 {
 }
 
 
- 
+#logo {
+    display: flex-end;
+    flex-direction: row;
+    padding: 25px;
+    color: Grey;
+    font-size: large;
+    
+  }
+
+  .nav.justify-content-center {
+    display: flex;
+   flex-direction: row;
+   float: right;
+   margin: -70px 10%;
+   justify-content: space-between;
+   
+  }
  
 >>>>>>> 984e3fb7668fdaa41cb192432c7e8ac4ac8052af
