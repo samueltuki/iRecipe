@@ -1,3 +1,6 @@
+
+let recipeChK = document.getElementById("recipesCheck");
+
 let apiKey = "5f62e1bea35847eb8da9582b2a2f8517";
 
 userCal = " maxCalories=500";
@@ -14,3 +17,4 @@ getRecipe();
 fetch('https://api.spoonacular.com/recipes/complexSearch?cuisine=italian&apiKey=' + apiKey)
   .then((response) => response.json())
   .then((info) => console.log(info));
+

@@ -1,0 +1,46 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background-image: url(./img/image-3.png);
+    background-size: cover;
+    animation: scroll-bg 10s linear infinite;
+}
+/* @keyframes scroll-bg {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 -100%;
+    }
+} */
+  
+ul{
+    font-weight: bold;
+    display: flex;
+}
+
+ul:hover{
+    color: rgb(246, 246, 3);
+}
+
+.hero {
+    opacity: 0.5;
+}
+
+.hero p{
+   font-weight:500;
+   word-wrap: break-word;
+   max-width: 40%;
+   color: rgb(0, 0, 0);
+}
+
+#getInspired .card img{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 200px;
+
+}
+h3 { color: blanchedalmond;}
