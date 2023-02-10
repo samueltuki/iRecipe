@@ -1,4 +1,10 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -37,12 +43,12 @@ ul:hover{
    color: rgb(0, 0, 0);
 }
 
-#getInspired .card img{
+/* #getInspired .card img{
     object-fit: cover;
     object-position: 50% 50%;
     height: 200px;
+} */
 
-}
 h3 { 
     color: rgb(252, 252, 252);
     font-weight: 700;
@@ -53,4 +59,4 @@ h3 {
     justify-content: center;
 }
  
- 
+

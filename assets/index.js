@@ -1,5 +1,5 @@
 
-let userInput = "pasta";
+let searchButton = document.querySelector(".btn-primary");
 const options = {
 	method: 'GET',
 	headers: {
@@ -9,19 +9,19 @@ const options = {
 };
 
 let recipeChK = document.getElementById("recipesCheck");
-
-fetch('https://yummly2.p.rapidapi.com/feeds/search?start=0&maxResult=5&q=' + userInput , options)
-
-
+searchButton.addEventListener("click", function (){
+  let userInput = document.querySelector(".form-control").value;
+  console.log(userInput);
+fetch('https://yummly2.p.rapidapi.com/feeds/search?start=0&maxResult=3&q=' + userInput , options)
 	.then(response => response.json())
-	.then(response => {
+	.then(response => { 
     // let recipe = response.feed.content.ingredientLines;
     // console.log(response.feed);
 for (let i = 0; i < response.feed.length; i++) {
-  console.log(response.feed[i]);
+  console.log(response.feed[i].display.displayName);
   for (let j = 0; j < response.feed[i].content.ingredientLines.length; j++) {
     console.log(response.feed[i].content.ingredientLines[j].wholeLine)
     
   }
   }});
-
+  });
