@@ -1,19 +1,8 @@
-<<<<<<< HEAD
-.card-img-top {
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-    }
-
-.h2Title {
-    margin-bottom: 40px;
-    font-size: 48px;
-    font-weight: 600;
-    color: #918783 ;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-
-=======
 
 html {
     scroll-behavior: smooth;
@@ -53,18 +42,47 @@ ul:hover{
    color: rgb(0, 0, 0);
 }
 
-#getInspired .card img{
+/* #getInspired .card img{
     object-fit: cover;
     object-position: 50% 50%;
     height: 200px;
+} */
 
-}
 h3 { 
     color: rgb(252, 252, 252);
     font-weight: 700;
 }
 
+/*Looking for some inspiration div*/
 
- 
- 
->>>>>>> 984e3fb7668fdaa41cb192432c7e8ac4ac8052af
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: white 20px solid;
+    width: 80%;
+    height: auto;
+}
+
+      
+.card-img-top {
+    height: 26vh;
+    /* max-height: 200px; */
+    width: 100%;
+    object-fit: cover;
+}
+    
+.card-body {
+    padding: 5px;
+}
+.h2Title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 600;
+    color: #918783 ;
+}
+
