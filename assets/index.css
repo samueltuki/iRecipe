@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
 
 html {
     scroll-behavior: smooth;
@@ -53,53 +54,9 @@ h3 {
     font-weight: 700;
 }
 
-/*Looking for some inspiration div*/
-
-
-.cardContainer {
+.recipeGen{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
-
-.card {
-    border: white 20px solid;
-    width: 80%;
-    height: auto;
-}
-
-      
-.card-img-top {
-    height: 26vh;
-    /* max-height: 200px; */
-    width: 100%;
-    object-fit: cover;
-}
-    
-.card-body {
-    padding: 5px;
-}
-.h2Title {
-    margin-bottom: 40px;
-    font-size: 48px;
-    font-weight: 600;
-    color: #918783 ;
-}
-
-#logo {
-    display: flex-end;
-    flex-direction: row;
-    padding: 25px;
-    color: Grey;
-    font-size: large;
-  }
-
-  .nav.justify-content-center {
-    display: flex;
-   flex-direction: row;
-   float: right;
-   margin: -70px 10%;
-   justify-content: space-between;
-  }
  
 
