@@ -48,6 +48,9 @@ h3 {
     font-weight: 700;
 }
 
-
+.recipeGen{
+    display: flex;
+    justify-content: center;
+}
  
  
