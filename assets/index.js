@@ -9,6 +9,10 @@ let imgRecipe3 = document.querySelector(".imgRecipe3");
 let hideClass1 = document.querySelector("#searchResult1");
 let hideClass2 = document.querySelector("#searchResult2");
 let hideClass3 = document.querySelector("#searchResult3");
+let btn1 = document.querySelector(".button1");
+let btn2 = document.querySelector(".button2");
+let btn3 = document.querySelector(".button3");
+
 
 // headers for fetch request.
 const options = {
@@ -37,6 +41,7 @@ searchButton.addEventListener("click", function (e) {
         hideClass1.classList.remove("hide")
         cardTitle1.textContent = response.feed[0].display.displayName;
         imgRecipe1.src = response.feed[0].display.images[0];
+        // btn1.href = response.feed[0].display.source.sourceRecipeUrl;
         // card two title and img src
         hideClass2.classList.remove("hide")
         cardTitle2.textContent = response.feed[1].display.displayName;
