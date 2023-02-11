@@ -64,4 +64,20 @@ h3 {
     display: none !important;
 } */
  
+#logo {
+    display: flex-end;
+    flex-direction: row;
+    padding: 25px;
+    color: Grey;
+    font-size: large;
+    
+  }
+
+  .nav.justify-content-center {
+    display: flex;
+   flex-direction: row;
+   float: right;
+   margin: -70px 10%;
+   justify-content: space-between;
+  }
 
