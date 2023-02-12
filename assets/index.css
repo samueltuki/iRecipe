@@ -58,9 +58,9 @@ h3 {
   justify-content: center;
 }
 
-/* .hide {
+.hide {
   display: none !important;
-} */
+}
 
 #logo {
   display: flex-end;
@@ -102,3 +102,18 @@ h3 {
     font-size: small;
 }
 
+<<<<<<< HEAD
+=======
+/* .SearchContainer{
+
+  object-fit:cover;
+  object-position: 50% 50%;
+  height: 280px;
+} */
+
+/* footer */
+
+.text-white {
+  color: white !important;
+}
+>>>>>>> 6527957790bb0a930d317ff36c77c8576f8bd272
