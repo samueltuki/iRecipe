@@ -78,8 +78,27 @@ h3 {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .imgRecipe1,
 .imgRecipe2,
 .imgRecipe3 {
   max-width: 400px;
 }
+=======
+
+.SearchContainer {
+    margin-top: 5px;
+    margin-left: 130px;
+    padding: 50px;
+    max-width: 250px;
+    max-height: 250px;
+    display: inline-block;
+    align-content: center;
+    
+}
+
+.card-body {
+    text-align: center;
+    font-size: small;
+}
+>>>>>>> 87a8ca70e75e5b3cb31eead3a2d7c97882eb7bba
