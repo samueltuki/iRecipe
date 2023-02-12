@@ -6,21 +6,19 @@ let cardTitle3 = document.querySelector(".card-title3");
 let imgRecipe1 = document.querySelector(".imgRecipe1");
 let imgRecipe2 = document.querySelector(".imgRecipe2");
 let imgRecipe3 = document.querySelector(".imgRecipe3");
-let hideClass1 = document.querySelector("#searchResult1");
-let hideClass2 = document.querySelector("#searchResult2");
-let hideClass3 = document.querySelector("#searchResult3");
+let hideClass = document.querySelector(".searchCard");
+
 let btn1 = document.querySelector(".button1");
 let btn2 = document.querySelector(".button2");
 let btn3 = document.querySelector(".button3");
 
-
 // headers for fetch request.
 const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
-		'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
-	}
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55",
+    "X-RapidAPI-Host": "yummly2.p.rapidapi.com",
+  },
 };
 // event listener added to search button that calls the function on click.
 searchButton.addEventListener("click", function (e) {
@@ -33,29 +31,26 @@ searchButton.addEventListener("click", function (e) {
   )
     .then((response) => response.json())
     .then((response) => {
+      console.log(response);
       // for loop that dynamically creates h2 elements and appends them to the cards.
       for (let i = 0; i < response.feed.length; i++) {
-        console.log(response.feed);
         // card one title and img src
-        hideClass1.classList.remove("hide")
         cardTitle1.textContent = response.feed[0].display.displayName;
         imgRecipe1.src = response.feed[0].display.images[0];
-        // btn1.href = response.feed[0].display.source.sourceRecipeUrl;
+        hideClass.classList.remove("hide");
         // card two title and img src
-        hideClass2.classList.remove("hide")
         cardTitle2.textContent = response.feed[1].display.displayName;
         imgRecipe2.src = response.feed[1].display.images[0];
         // card three title and img src
-        hideClass3.classList.remove("hide")
         cardTitle3.textContent = response.feed[2].display.displayName;
         imgRecipe3.src = response.feed[2].display.images[0];
+      for (
+        let j = 0;
+        j < response.feed[i].content.ingredientLines.length;
+        j++
+      ) {
+        console.log(response.feed[i].content.ingredientLines[j].wholeLine);
       }
-      // for (
-      //   let j = 0;
-      //   j < response.feed[i].content.ingredientLines.length;
-      //   j++
-      // ) {
-      //   // console.log(response.feed[i].content.ingredientLines[j].wholeLine)
-      // }
-    });
+    }});
 });
+

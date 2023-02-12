@@ -58,9 +58,9 @@ h3 {
   justify-content: center;
 }
 
-/* .hide {
+.hide {
   display: none !important;
-} */
+}
 
 #logo {
   display: flex-end;
