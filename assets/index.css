@@ -27,7 +27,7 @@ ul {
   display: flex;
 }
 
-ul:hover {
+a:hover {
   color: rgb(246, 246, 3);
 }
 
@@ -69,6 +69,8 @@ h3 {
   color: Grey;
   font-size: large;
 }
+
+
 
 .nav.justify-content-center {
   display: flex;
