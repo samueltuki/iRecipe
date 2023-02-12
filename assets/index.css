@@ -94,7 +94,7 @@ h3 {
 
 .card-body {
   text-align: center;
-  font-size: small;
+  font-size: 18px;
 }
 
 /* .SearchContainer{
@@ -109,3 +109,5 @@ h3 {
 .text-white {
   color: white !important;
 }
+
+
