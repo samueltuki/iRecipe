@@ -1,19 +1,17 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-   
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  body{
-    background-image: url(./img/image-3.png);
-    background-size: cover;
-    animation: scroll-bg 10s linear infinite;
+body {
+  background-image: url(./img/image-3.png);
+  background-size: cover;
+  animation: scroll-bg 10s linear infinite;
 }
 /* @keyframes scroll-bg {
     0%{
@@ -23,25 +21,25 @@ html {
         background-position: 0 -100%;
     }
 } */
-  
-ul{
-    font-weight: bold;
-    display: flex;
+
+ul {
+  font-weight: bold;
+  display: flex;
 }
 
-ul:hover{
-    color: rgb(246, 246, 3);
+ul:hover {
+  color: rgb(246, 246, 3);
 }
 
 .hero {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-.hero p{
-   font-weight:500;
-   word-wrap: break-word;
-   max-width: 40%;
-   color: rgb(0, 0, 0);
+.hero p {
+  font-weight: 500;
+  word-wrap: break-word;
+  max-width: 40%;
+  color: rgb(0, 0, 0);
 }
 
 /* #getInspired .card img{
@@ -50,35 +48,40 @@ ul:hover{
     height: 200px;
 } */
 
-h3 { 
-    color: rgb(252, 252, 252);
-    font-weight: 700;
+h3 {
+  color: rgb(252, 252, 252);
+  font-weight: 700;
 }
 
-.recipeGen{
-    display: flex;
-    justify-content: center;
+.recipeGen {
+  display: flex;
+  justify-content: center;
 }
 
 .hide{
     display: none !important;
 }
- 
+
 #logo {
-    display: flex-end;
-    flex-direction: row;
-    padding: 25px;
-    color: Grey;
-    font-size: large;
-    
-  }
+  display: flex-end;
+  flex-direction: row;
+  padding: 25px;
+  color: Grey;
+  font-size: large;
+}
 
-  .nav.justify-content-center {
-    display: flex;
-   flex-direction: row;
-   float: right;
-   margin: -70px 10%;
-   justify-content: space-between;
-  }
-  
+.nav.justify-content-center {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin: -70px 10%;
+  justify-content: space-between;
+}
 
+
+
+.imgRecipe1,
+.imgRecipe2,
+.imgRecipe3{
+    max-width: 400px;
+}
