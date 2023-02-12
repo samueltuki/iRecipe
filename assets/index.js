@@ -16,13 +16,12 @@ let btn3 = document.querySelector(".button3");
 
 // headers for fetch request.
 const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "e48b4fae3bmshf247b3bace5571dp1e495fjsn2631d49c5c2e",
-    "X-RapidAPI-Host": "yummly2.p.rapidapi.com",
-  },
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
+		'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
+	}
 };
-
 // event listener added to search button that calls the function on click.
 searchButton.addEventListener("click", function (e) {
   e.preventDefault();
