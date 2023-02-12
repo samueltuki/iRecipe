@@ -89,6 +89,10 @@ h3 {
     max-height: 250px;
     display: inline-block;
     align-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
     
 }
 
@@ -98,9 +102,3 @@ h3 {
     font-size: small;
 }
 
-/* .SearchContainer{
-
-  object-fit:cover;
-  object-position: 50% 50%;
-  height: 280px;
-} */
