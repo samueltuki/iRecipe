@@ -58,9 +58,9 @@ h3 {
   justify-content: center;
 }
 
-.hide{
-    display: none !important;
-}
+/* .hide {
+  display: none !important;
+} */
 
 #logo {
   display: flex-end;
@@ -79,10 +79,12 @@ h3 {
 }
 
 
+
+
 .SearchContainer {
     margin-top: 5px;
-    margin-left: 130px;
-    padding: 50px;
+    margin-left: 5px;
+    padding: 5px;
     max-width: 250px;
     max-height: 250px;
     display: inline-block;
@@ -90,7 +92,15 @@ h3 {
     
 }
 
+
 .card-body {
     text-align: center;
     font-size: small;
 }
+
+/* .SearchContainer{
+
+  object-fit:cover;
+  object-position: 50% 50%;
+  height: 280px;
+} */
