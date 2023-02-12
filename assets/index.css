@@ -58,9 +58,9 @@ h3 {
   justify-content: center;
 }
 
-.hide {
+/* .hide {
   display: none !important;
-}
+} */
 
 #logo {
   display: flex-end;
@@ -77,11 +77,6 @@ h3 {
   margin: -70px 10%;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> c8db8a23e2101dc6faa34147b5122052c3e41dfc
 
 .imgRecipe1,
 .imgRecipe2,
