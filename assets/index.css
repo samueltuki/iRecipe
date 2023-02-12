@@ -81,3 +81,20 @@ h3 {
    justify-content: space-between;
   }
 
+.SearchContainer {
+    margin-top: 5px;
+    margin-left: 130px;
+    padding: 50px;
+    max-width: 250px;
+    max-height: 250px;
+    display: inline-block;
+    align-content: center;
+    
+}
+
+.card-body {
+    text-align: center;
+    font-size: small;
+}
+
+
