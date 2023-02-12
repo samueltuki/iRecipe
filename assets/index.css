@@ -79,9 +79,18 @@ h3 {
 }
 
 
+.SearchContainer {
+    margin-top: 5px;
+    margin-left: 130px;
+    padding: 50px;
+    max-width: 250px;
+    max-height: 250px;
+    display: inline-block;
+    align-content: center;
+    
+}
 
-.imgRecipe1,
-.imgRecipe2,
-.imgRecipe3{
-    max-width: 400px;
+.card-body {
+    text-align: center;
+    font-size: small;
 }
