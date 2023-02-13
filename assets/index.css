@@ -85,8 +85,8 @@ h3 {
     margin-top: 5px;
     margin-left: 5px;
     padding: 5px;
-    max-width: 250px;
-    max-height: 250px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
     align-content: center;
     max-width: 100%;
@@ -102,12 +102,7 @@ h3 {
     font-size: small;
 }
 
-/* .SearchContainer{
 
-  object-fit:cover;
-  object-position: 50% 50%;
-  height: 280px;
-} */
 
 /* footer */
 
