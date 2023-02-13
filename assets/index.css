@@ -27,7 +27,7 @@ ul {
   display: flex;
 }
 
-ul:hover {
+a:hover {
   color: rgb(246, 246, 3);
 }
 
@@ -70,6 +70,10 @@ h3 {
   font-size: large;
 }
 
+#logo:hover {
+  color: rgb(246, 246, 3);
+}
+
 .nav.justify-content-center {
   display: flex;
   flex-direction: row;
@@ -78,10 +82,8 @@ h3 {
   justify-content: space-between;
 }
 
-
-
-
 .SearchContainer {
+<<<<<<< HEAD
     margin-top: 5px;
     margin-left: 5px;
     padding: 5px;
@@ -94,14 +96,31 @@ h3 {
     object-fit: cover;
     object-position: 50% 50%;
     
+=======
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  max-width: 250px;
+  max-height: 250px;
+  display: inline-block;
+  align-content: center;
+>>>>>>> 2bbb36313b156010f71e6f552cddc627f608516d
 }
-
 
 .card-body {
-    text-align: center;
-    font-size: small;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+
+
+/* .SearchContainer{
+>>>>>>> 2bbb36313b156010f71e6f552cddc627f608516d
 
 
 /* footer */
@@ -109,3 +128,7 @@ h3 {
 .text-white {
   color: white !important;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2bbb36313b156010f71e6f552cddc627f608516d

@@ -7,10 +7,12 @@ let imgRecipe1 = document.querySelector(".imgRecipe1");
 let imgRecipe2 = document.querySelector(".imgRecipe2");
 let imgRecipe3 = document.querySelector(".imgRecipe3");
 let hideClass = document.querySelector(".searchCard");
-
 let btn1 = document.querySelector(".button1");
 let btn2 = document.querySelector(".button2");
 let btn3 = document.querySelector(".button3");
+let cardBody1 = document.querySelector(".card1");
+let cardBody2 = document.querySelector(".card2");
+let cardBody3 = document.querySelector(".card3");
 
 // headers for fetch request.
 const options = {
@@ -44,13 +46,28 @@ searchButton.addEventListener("click", function (e) {
         // card three title and img src
         cardTitle3.textContent = response.feed[2].display.displayName;
         imgRecipe3.src = response.feed[2].display.images[0];
-      for (
-        let j = 0;
-        j < response.feed[i].content.ingredientLines.length;
-        j++
-      ) {
-        console.log(response.feed[i].content.ingredientLines[j].wholeLine);
+        for (
+          let j = 0;
+          j < response.feed[i].content.ingredientLines.length;
+          j++
+        ) {
+          // card one
+          let pOne = document.createElement("p");
+          pOne.textContent =
+            response.feed[0].content.ingredientLines[j].wholeLine;
+          cardBody1.append(pOne);
+          // card two
+          let pTwo = document.createElement("p");
+          pTwo.textContent =
+            response.feed[1].content.ingredientLines[j].wholeLine;
+          cardBody2.append(pTwo);
+          // card three
+          let pThree = document.createElement("p");
+          pThree.textContent =
+            response.feed[2].content.ingredientLines[j].wholeLine;
+          cardBody3.append(pThree);
+          console.log(response.feed[2].content);
+        }
       }
-    }});
+    });
 });
-
