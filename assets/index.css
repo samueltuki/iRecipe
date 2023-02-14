@@ -141,5 +141,8 @@ a.hover-effect:hover {
 .nav-link {
   color: brown !important;
   float: right;
+  margin: -10px;
+  padding: -20px;
+
 }
 
