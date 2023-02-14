@@ -35,6 +35,13 @@ a:hover {
 
 .hero {
   opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+    color: rgb(0, 0, 0);
+  ;
 }
 
 .hero p {
