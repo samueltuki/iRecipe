@@ -25,7 +25,9 @@ body {
 ul {
   font-weight: bold;
   display: flex;
+  color: grey !important;
 }
+
 
 a:hover {
   color: rgb(246, 246, 3);
@@ -66,7 +68,7 @@ h3 {
   display: flex-end;
   flex-direction: row;
   padding: 25px;
-  color: Grey;
+  color: brown;
   font-size: large;
 }
 
@@ -80,6 +82,7 @@ h3 {
   float: right;
   margin: -70px 10%;
   justify-content: space-between;
+  color: grey !important;
 }
 
 .SearchContainer {
@@ -115,3 +118,7 @@ h3 {
   color: white !important;
 }
 
+.nav-link {
+  color: brown !important;
+  float: right;
+}
