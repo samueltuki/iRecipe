@@ -91,38 +91,30 @@
 // });
 
 
-// function translateText(pOne.textContent, targetLanguage) {
-//   let apiKey = '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55'
-//   let url = 'https://google-translate1.p.rapidapi.com'
+function translateText() {
+  const options = {
+    method: 'GET',
+    headers: {
+      'Accept-Encoding': 'application/gzip',
+      'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
+      'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+    }
+  };
 
-//   fetch(url) 
-//   .then((response) => response.json())
-//   .then((data) => {
-    
-//     let targetLanguages = ["fr", "es", "it", "ja"];
-//     for (let i = 0; i < targetLanguages.length; i++) {
-//       let targetLanguage = targetLanguages[i];
-    
-//     }
+  fetch('https://google-translate1.p.rapidapi.com/language/translate/v2/languages', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
+   console.log(response);
 
-//   })
+}
 
-  
-// }
 
-const TranslateOption = {
-  method: 'GET',
-  headers: {
-    'Accept-Encoding': 'application/gzip',
-    'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
-    'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-  }
-};
 
-fetch('https://google-translate1.p.rapidapi.com/language/translate/v2/languages', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
+searchButton.addEventListener("click", function (e) {
+  e.preventDefault();
+
+})
 
 
 
