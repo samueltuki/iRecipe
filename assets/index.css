@@ -26,7 +26,9 @@ body {
 ul {
   font-weight: bold;
   display: flex;
+  color: grey !important;
 }
+
 
 a:hover {
   color: rgb(246, 246, 3);
@@ -67,7 +69,7 @@ h3 {
   display: flex-end;
   flex-direction: row;
   padding: 25px;
-  color: Grey;
+  color: brown;
   font-size: large;
 }
 
@@ -82,6 +84,7 @@ h3 {
   float: right;
   margin: -70px 10%;
   justify-content: space-between;
+  color: grey !important;
 }
 
 .SearchContainer {
@@ -109,6 +112,38 @@ h3 {
 
 /* footer */
 
+.company-name {
+  font-size: 25px;
+}
+
+a.hover-effect:hover {
+  color: rgb(246, 246, 3);
+}
+
+.fab.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fab.fa-twitter:hover {
+  color:  #1da1f2;
+}
+
+.fab.fa-instagram:hover {
+  color: #e1306c;
+}
+
 .text-white {
   color: white !important;
 }
+<<<<<<< HEAD
+=======
+
+.nav-link {
+  color: brown !important;
+  float: right;
+  margin: -10px;
+  padding: -20px;
+
+}
+
+>>>>>>> a3a57f6e01a0426640320621428b92c4813b46aa
