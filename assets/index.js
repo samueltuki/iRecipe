@@ -6,6 +6,8 @@ let hideClass = document.querySelector(".searchCard");
 let btn1 = document.querySelector(".button1");
 let cardBody1 = document.querySelector(".card1");
 let p2El = document.createElement("p");
+let pEl = document.createElement("p");
+let emptyString = document.querySelector(".pClass");
 
 // api key
 const apiKey = "cd8d4115f8c64fd0859f8a90e0d57eb7";
@@ -13,6 +15,7 @@ const apiKey = "cd8d4115f8c64fd0859f8a90e0d57eb7";
 // event listener that fires off fetch requests on click.
 searchButton.addEventListener("click", function (e) {
   e.preventDefault();
+
   // gets user input value
   let userInput = document.querySelector(".form-control").value;
 
@@ -39,11 +42,13 @@ searchButton.addEventListener("click", function (e) {
         .then((info) => {
           // for loop that dynamicaly creates p elements and appends each ingredient of array to page
           for (let i = 0; i < info.extendedIngredients.length; i++) {
-            let pEl = document.createElement("p");
+            pEl = document.createElement("p");
+            pEl.classList.add("pClass");
+            let emptyString = document.querySelector(".pClass");
+            emptyString.textContent = "";
             pEl.textContent = info.extendedIngredients[i].original;
             cardBody1.append(pEl);
           }
-
           // remove hide class to show card on search.
           hideClass.classList.remove("hide");
           // displays title
