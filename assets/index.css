@@ -28,7 +28,7 @@ ul {
   display: flex;
 }
 
-.nav-link{
+.nav-link {
   color: white;
 }
 
@@ -44,11 +44,10 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-    color: rgb(0, 0, 0);
-  ;
+  color: rgb(0, 0, 0);
 }
 
-.hero > h1{
+.hero > h1 {
   font-size: 90px;
 }
 
@@ -83,7 +82,7 @@ h3 {
   display: flex-end;
   flex-direction: row;
   padding: 25px;
-  font-size:30px;
+  font-size: 30px;
 }
 
 #logo > a:hover {
@@ -119,6 +118,7 @@ h3 {
   align-items: center;
 }
 
+<<<<<<< HEAD
 
 
 .SearchContainer{
@@ -126,6 +126,10 @@ h3 {
 <<<<<<< HEAD
 =======
   object-fit:cover;
+=======
+.SearchContainer {
+  object-fit: cover;
+>>>>>>> 3e6a47d7fe5954c635d53ca7532e88e4e0e58cbe
   object-position: 50% 50%;
   height: 280px;
 }
@@ -146,7 +150,7 @@ a.hover-effect:hover {
 }
 
 .fab.fa-twitter:hover {
-  color:  #1da1f2;
+  color: #1da1f2;
 }
 
 .fab.fa-instagram:hover {
@@ -165,5 +169,8 @@ a.hover-effect:hover {
   margin: -10px;
   padding: -20px;
 }
+<<<<<<< HEAD
 
 >>>>>>> a3a57f6e01a0426640320621428b92c4813b46aa
+=======
+>>>>>>> 3e6a47d7fe5954c635d53ca7532e88e4e0e58cbe
