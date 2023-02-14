@@ -114,6 +114,26 @@ h3 {
 
 /* footer */
 
+.company-name {
+  font-size: 25px;
+}
+
+a.hover-effect:hover {
+  color: rgb(246, 246, 3);
+}
+
+.fab.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fab.fa-twitter:hover {
+  color:  #1da1f2;
+}
+
+.fab.fa-instagram:hover {
+  color: #e1306c;
+}
+
 .text-white {
   color: white !important;
 }
@@ -122,3 +142,4 @@ h3 {
   color: brown !important;
   float: right;
 }
+
