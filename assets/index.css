@@ -26,16 +26,30 @@ body {
 ul {
   font-weight: bold;
   display: flex;
-  color: grey !important;
 }
 
+.nav-link{
+  color: white;
+}
 
 a:hover {
   color: rgb(246, 246, 3);
+  text-decoration: underline;
 }
 
 .hero {
   opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+    color: rgb(0, 0, 0);
+  ;
+}
+
+.hero > h1{
+  font-size: 90px;
 }
 
 .hero p {
@@ -69,11 +83,11 @@ h3 {
   display: flex-end;
   flex-direction: row;
   padding: 25px;
-  color: brown;
-  font-size: large;
+  font-size:30px;
 }
 
-#logo:hover {
+#logo > a:hover {
+  text-decoration: underline;
   color: rgb(246, 246, 3);
   cursor: pointer;
 }
@@ -84,15 +98,15 @@ h3 {
   float: right;
   margin: -70px 10%;
   justify-content: space-between;
-  color: grey !important;
+  font-size: 30px;
 }
 
 .SearchContainer {
   margin-top: 5px;
   margin-left: 5px;
   padding: 5px;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: auto;
+  max-height: auto;
   display: inline-block;
   align-content: center;
 }
@@ -107,8 +121,15 @@ h3 {
 
 
 
-/* .SearchContainer{
+.SearchContainer{
 
+<<<<<<< HEAD
+=======
+  object-fit:cover;
+  object-position: 50% 50%;
+  height: 280px;
+}
+>>>>>>> c9f647c1da247c98cdd986fb56c5d1a1b88d4737
 
 /* footer */
 
@@ -139,11 +160,10 @@ a.hover-effect:hover {
 =======
 
 .nav-link {
-  color: brown !important;
+  color: white;
   float: right;
   margin: -10px;
   padding: -20px;
-
 }
 
 >>>>>>> a3a57f6e01a0426640320621428b92c4813b46aa
