@@ -10,11 +10,12 @@ html {
 
 body {
   background-image: url(./img/image-3.png);
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.889), rgb(77, 0, 193)); */
   background-size: cover;
   animation: scroll-bg 10s linear infinite;
 }
 /* @keyframes scroll-bg {
-    0%{
+    10%{
         background-position: 0 0;
     }
     100%{
@@ -120,6 +121,7 @@ h3 {
 #logo > a:hover {
   text-decoration: underline;
   color: rgb(246, 246, 3);
+  cursor: pointer;
 }
 
 .nav.justify-content-center {
@@ -151,9 +153,11 @@ h3 {
 
 .SearchContainer {
   object-fit: cover;
+
   object-position: 50% 50%;
   height: 280px;
 }
+
 
 /* footer */
 
@@ -181,7 +185,12 @@ a.hover-effect:hover {
   color: white !important;
 }
 
+<<<<<<< HEAD
+
+.nav-link {
+=======
 /* .nav-link {
+>>>>>>> c60c88dfe23899d0830132acf9ab12de37fa7b0a
   color: white;
   float: right;
   margin: -10px;
