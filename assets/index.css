@@ -23,7 +23,32 @@ body {
     }
 } */
 
-ul {
+/* Navigation Bar */
+
+.bg-dark {
+  opacity: 0.9;
+}
+.text {
+  font-size: 36px;
+  color: white !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.navbar-brand:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+}
+
+
+/* ul {
   font-weight: bold;
   display: flex;
 }
@@ -35,6 +60,12 @@ ul {
 a:hover {
   color: rgb(246, 246, 3);
   text-decoration: underline;
+} */
+
+/* Hero Section  */
+
+.jumbo-margin {
+  margin-top: 150px;
 }
 
 .hero {
@@ -80,7 +111,7 @@ h3 {
   display: none !important;
 }
 
-#logo {
+/* #logo {
   display: flex-end;
   flex-direction: row;
   padding: 25px;
@@ -100,7 +131,7 @@ h3 {
   margin: -55px 10%;
   justify-content: space-between;
   font-size: 20px;
-}
+} */
 
 .SearchContainer {
   margin-top: 5px;
@@ -154,13 +185,17 @@ a.hover-effect:hover {
   color: white !important;
 }
 
+<<<<<<< HEAD
 
 .nav-link {
+=======
+/* .nav-link {
+>>>>>>> c60c88dfe23899d0830132acf9ab12de37fa7b0a
   color: white;
   float: right;
   margin: -10px;
   padding: -20px;
-}
+} */
 
 
 .testimonials {
