@@ -24,7 +24,9 @@ body {
 
 /* Navigation Bar */
 
-
+.bg-dark {
+  opacity: 0.9;
+}
 .text {
   font-size: 36px;
   color: white !important;
