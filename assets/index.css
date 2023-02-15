@@ -47,8 +47,10 @@ a:hover {
   color: rgb(0, 0, 0);
 }
 
-.hero > h1 {
-  font-size: 90px;
+
+.hero > h1{
+  font-size: 65px;
+
 }
 
 .hero p {
@@ -82,7 +84,7 @@ h3 {
   display: flex-end;
   flex-direction: row;
   padding: 25px;
-  font-size: 30px;
+  font-size:33px;
 }
 
 #logo > a:hover {
@@ -95,9 +97,9 @@ h3 {
   display: flex;
   flex-direction: row;
   float: right;
-  margin: -70px 10%;
+  margin: -55px 10%;
   justify-content: space-between;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .SearchContainer {
@@ -159,3 +161,49 @@ a.hover-effect:hover {
   margin: -10px;
   padding: -20px;
 }
+
+
+.testimonials {
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimonial {
+  width: 25%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
