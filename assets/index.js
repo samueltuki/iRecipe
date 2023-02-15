@@ -55,7 +55,6 @@ searchButton.addEventListener("click", function (e) {
           // appends list of instructions
           p2El.innerHTML = info.instructions;
           cardBody1.append(p2El);
-          like(element);
         });
     });
 });
@@ -64,9 +63,7 @@ searchButton.addEventListener("click", function (e) {
 
 
 
-likeBtn.addEventListener("click", function(){
-  likeBtn.classList.add("toggle")
-})
 
-
-localStorage.getItem("likeColor");
+function like() {
+  likeBtn.classList.toggle("toggle");
+};

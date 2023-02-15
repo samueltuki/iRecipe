@@ -46,11 +46,11 @@ body {
   text-underline-offset: 0.1em;
 }
 .like{
-  color: #3B71CA;
+  color:#DCDCDC;
 }
 
 .toggle{
-  color: red;
+  color:#3B71CA;
 }
 
 /* ul {
