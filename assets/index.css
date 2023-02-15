@@ -45,7 +45,13 @@ body {
   text-decoration: underline;
   text-underline-offset: 0.1em;
 }
+.like{
+  color: #3B71CA;
+}
 
+.toggle{
+  color: red;
+}
 
 /* ul {
   font-weight: bold;
@@ -106,9 +112,14 @@ h3 {
   justify-content: center;
 }
 
-.hide {
-  display: none !important;
+
+.like{
+  border: none;
 }
+
+/* .hide {
+  display: none !important;
+} */
 
 /* #logo {
   display: flex-end;

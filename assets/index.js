@@ -7,8 +7,7 @@ let btn1 = document.querySelector(".button1");
 let cardBody1 = document.querySelector(".card1");
 let p2El = document.createElement("p");
 let pEl = document.createElement("p");
-let emptyString = document.querySelector(".pClass");
-
+let likeBtn = document.querySelector('.fa-thumbs-up');
 // api key
 const apiKey = "cd8d4115f8c64fd0859f8a90e0d57eb7";
 
@@ -44,8 +43,6 @@ searchButton.addEventListener("click", function (e) {
           for (let i = 0; i < info.extendedIngredients.length; i++) {
             pEl = document.createElement("p");
             pEl.classList.add("pClass");
-            let emptyString = document.querySelector(".pClass");
-            emptyString.textContent = "";
             pEl.textContent = info.extendedIngredients[i].original;
             cardBody1.append(pEl);
           }
@@ -58,6 +55,18 @@ searchButton.addEventListener("click", function (e) {
           // appends list of instructions
           p2El.innerHTML = info.instructions;
           cardBody1.append(p2El);
+          like(element);
         });
     });
 });
+
+// like button
+
+
+
+likeBtn.addEventListener("click", function(){
+  likeBtn.classList.add("toggle")
+})
+
+
+localStorage.getItem("likeColor");
