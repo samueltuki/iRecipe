@@ -10,12 +10,12 @@ html {
 
 body {
   background-image: url(./img/image-3.png);
-  /* background-image: linear-gradient(rgba(222, 51, 51, 0.5), rgba(53, 37, 37, 0.5)); */
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.889), rgb(77, 0, 193)); */
   background-size: cover;
   animation: scroll-bg 10s linear infinite;
 }
 /* @keyframes scroll-bg {
-    0%{
+    10%{
         background-position: 0 0;
     }
     100%{
@@ -118,22 +118,13 @@ h3 {
   align-items: center;
 }
 
-<<<<<<< HEAD
-
-
-.SearchContainer{
-
-<<<<<<< HEAD
-=======
-  object-fit:cover;
-=======
 .SearchContainer {
   object-fit: cover;
->>>>>>> 3e6a47d7fe5954c635d53ca7532e88e4e0e58cbe
+
   object-position: 50% 50%;
   height: 280px;
 }
->>>>>>> c9f647c1da247c98cdd986fb56c5d1a1b88d4737
+
 
 /* footer */
 
@@ -160,8 +151,7 @@ a.hover-effect:hover {
 .text-white {
   color: white !important;
 }
-<<<<<<< HEAD
-=======
+
 
 .nav-link {
   color: white;
@@ -169,8 +159,3 @@ a.hover-effect:hover {
   margin: -10px;
   padding: -20px;
 }
-<<<<<<< HEAD
-
->>>>>>> a3a57f6e01a0426640320621428b92c4813b46aa
-=======
->>>>>>> 3e6a47d7fe5954c635d53ca7532e88e4e0e58cbe

@@ -61,3 +61,31 @@ searchButton.addEventListener("click", function (e) {
         });
     });
 });
+
+function translateText(){
+
+  const encodedParams = new URLSearchParams();
+  encodedParams.append("source", "en");
+  encodedParams.append("target", "es");
+  encodedParams.append("q", params);
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded',
+      'Accept-Encoding': 'application/gzip',
+      'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
+      'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+    },
+    body: encodedParams
+  };
+
+  fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
+
+translateText("info.title")
+
+}
+
