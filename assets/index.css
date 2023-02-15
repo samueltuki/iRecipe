@@ -110,19 +110,18 @@ h3 {
   align-content: center;
 }
 
+
+
+
 .card-body {
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f2f2f2;
 }
 
-.SearchContainer {
-  object-fit: cover;
-  object-position: 50% 50%;
-  height: 280px;
-}
 
 /* footer */
 

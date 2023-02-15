@@ -44,8 +44,6 @@ searchButton.addEventListener("click", function (e) {
           for (let i = 0; i < info.extendedIngredients.length; i++) {
             pEl = document.createElement("p");
             pEl.classList.add("pClass");
-            let emptyString = document.querySelector(".pClass");
-            emptyString.textContent = "";
             pEl.textContent = info.extendedIngredients[i].original;
             cardBody1.append(pEl);
           }
