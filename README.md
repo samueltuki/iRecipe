@@ -1,25 +1,36 @@
 # Project's Title
 
 
-iRecipe - Recipe and Food Image Generator
+iRecipe - Recipe Generator App with Translation Capability
+
 
 
 ## Description 
 
 
-iRecipe is a real-world front-end application recipe and food image generator app that will provide users with access to a large collection of recipes and corresponding images. It will allow users to search for recipes based on ingredients, cuisine type and dietary restrictions along with information on ingredients, instructions, cooking time, and other details for each recipe. In addition, iRecipe will provide images of the finished dishes to help users visualize the recipes and get an idea of what the dishes should look like. This app will run in the browser and feature dynamically updated HTML and CSS with Bootstrap classes to make it responsive powered by JavaScript.
+iRecipe is a real-world front-end application app that provides users with access to a large collection of recipes and corresponding images, including international dishes. 
 
-iRecipe is an ideal app for a wide range of users; for people who are adventurous when it comes to exploring new food as well as for home cooks, food bloggers, chefs or anyone else who needs access to a large collection of recipes and images.
+
+Users can search for recipes based on ingredients, and dietary restrictions, with information on instructions, cooking time, and other details for each recipe. The app also includes a translation feature to view recipes in the user's preferred language.
+
+In addition to food recipes, iRecipe also features a random cocktail recipe generator, giving users a chance to explore new and exciting drinks. The app provides images of the finished dishes to help visualize the recipes and get an idea of what the final product should look like.
+
+
+iRecipe is an ideal app for a wide range of users, including home cooks, food bloggers, chefs, and anyone else who needs access to a large collection of recipes and images. The app runs in the browser and features dynamically updated HTML and CSS with Bootstrap classes to make it responsive, powered by JavaScript.
+
+
 
 
 ## Features
 
 
-Access to a wide collection of recipes and related images
-Search for recipes based on ingredients, cuisine type, dietary restrictions, and more
-Step-by-step instructions 
-Information on ingredients and other details for each recipe
-Beautiful images of each finished dish
+-Access to a wide collection of recipes and related images
+-Search for recipes based on ingredients, cuisine dietary restrictions, and more
+-Step-by-step instructions 
+-Information on ingredients and other details for each recipe
+-Beautiful images of each finished dish
+-Translation
+-Random cocktail recipe generator
 
 
 ## Screenshot
@@ -34,8 +45,8 @@ Beautiful images of each finished dish
 - HTML
 - CSS
 - Bootstrap
-- Yummly API
-- Unsplash API
+- Spoonacular API
+- Cocktails API
 - Canva
 - DOM Manipulation
 
@@ -43,7 +54,7 @@ Beautiful images of each finished dish
 ## Getting Started
 
 
-Getting started with iRecipe is easy. Simply click the live Site URL link and start exploring the world of cooking like never before. With iRecipe, you'll have access to a wide collection of recipes and images to inspire your next meal.
+Getting started with iRecipe is easy. Simply click the live Site URL link and start exploring the world of cooking and cocktail making like never before. With iRecipe, you'll have access to a wide collection of recipes and images to inspire your next meal. Whether you're looking to cook an Italian dish or a Chinese one, our app offers translation capabilities, allowing you to explore new cuisines and flavors with ease. Additionally, our app offers a random cocktail generator feature, enabling you to discover new and exciting drinks that you may not have considered before.
 
 
 ## Links to the deployed application and the GitHub repository
@@ -55,10 +66,10 @@ Getting started with iRecipe is easy. Simply click the live Site URL link and st
 
 ## Author
 
-Adam Willetts
-Ahme Oshiokhai
-Sandra Guerra
-Tuki Samuel
+-Adam Willetts
+-Ahme Oshiokhai
+-Sandra Guerra
+-Tuki Samuel
  
 
 
