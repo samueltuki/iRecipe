@@ -7,9 +7,9 @@ let btn1 = document.querySelector(".button1");
 let cardBody1 = document.querySelector(".card1");
 let p2El = document.createElement("p");
 let pEl = document.createElement("p");
+let likeBtn = document.querySelector(".fa-thumbs-up");
 let emptyString = document.querySelector(".pClass");
 let ingredientEl = document.querySelector(".instructions");
-
 // api key
 const apiKey = "1fce12db04a04be5be21bfb6692f4d2b";
 
@@ -41,43 +41,34 @@ searchButton.addEventListener("click", function (e) {
       )
         .then((response) => response.json())
         .then((info) => {
-          cardTitle1.textContent = ""
-          p2El.innerHTML = ""
-          ingredientEl.textContent = ""
-           // remove hide class to show card on search.
-           hideClass.classList.remove("hide");
-           // displays title
-           cardTitle1.textContent = info.title;
-           // changes image src to image of recipe
-           imgRecipe1.src = info.image;
-           // appends list of instructions
-           p2El.innerHTML = info.instructions;
-           
-           cardBody1.append(p2El);
+          cardTitle1.textContent = "";
+          p2El.innerHTML = "";
+          ingredientEl.textContent = "";
+          // remove hide class to show card on search.
+          hideClass.classList.remove("hide");
+          // displays title
+          cardTitle1.textContent = info.title;
+          // changes image src to image of recipe
+          imgRecipe1.src = info.image;
+          // appends list of instructions
+          p2El.innerHTML = info.instructions;
+
+          cardBody1.append(p2El);
 
           // for loop that dynamicaly creates p elements and appends each ingredient of array to page
           for (let i = 0; i < info.extendedIngredients.length; i++) {
             pEl = document.createElement("p");
             pEl.classList.add("pClass");
-            let emptyString = document.querySelector(".pClass");
             // emptyString.textContent = "";
             pEl.textContent = info.extendedIngredients[i].original;
             ingredientEl.append(pEl);
-            
           }
-         
-       
-
         });
-
-      
     });
-
-    
 });
 
+// like button
 // function translateText(translatedText){
-
 
 //   const encodedParams = new URLSearchParams();
 //   encodedParams.append("source", "en");
@@ -101,7 +92,32 @@ searchButton.addEventListener("click", function (e) {
 //     .catch(err => console.error(err));
 
 
+// variable to set local storage on load.
+let btnLiked = localStorage.getItem("liked");
+// if the like button is clicked on load run like function
+if (btnLiked === "enabled"){
+  like();
+}
+
+// function for like class
+function like() {
+  likeBtn.classList.add("like-clicked");
+  localStorage.setItem("liked", "enabled");
+}
+// function for dislike class
+function dislike() {
+  likeBtn.classList.remove("like-clicked");
+  localStorage.setItem("liked", null);
+}
 
 
+// event listener to get local storage on click
+// if statement to determine whether its been liked or not.
+likeBtn.addEventListener("click", function () {
+  btnLiked = localStorage.getItem("liked");
+  if (btnLiked !== "enabled") {
+    like();
+  } else { dislike();
 
-// }
+  }
+});

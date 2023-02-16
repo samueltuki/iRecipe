@@ -46,7 +46,13 @@ body {
   text-decoration: underline;
   text-underline-offset: 0.1em;
 }
+.like{
+  color:#DCDCDC;
+}
 
+.toggle{
+  color:#3B71CA;
+}
 
 /* ul {
   font-weight: bold;
@@ -105,6 +111,14 @@ h3 {
 .recipeGen {
   display: flex;
   justify-content: center;
+}
+
+.like-clicked{
+  color:#3B71CA;
+}
+.like{
+  border: none;
+  color: #332D2D;
 }
 
 .hide {
@@ -185,12 +199,7 @@ a.hover-effect:hover {
   color: white !important;
 }
 
-<<<<<<< HEAD
-
-.nav-link {
-=======
 /* .nav-link {
->>>>>>> c60c88dfe23899d0830132acf9ab12de37fa7b0a
   color: white;
   float: right;
   margin: -10px;
