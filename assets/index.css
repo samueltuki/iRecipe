@@ -46,7 +46,13 @@ body {
   text-decoration: underline;
   text-underline-offset: 0.1em;
 }
+.like{
+  color:#DCDCDC;
+}
 
+.toggle{
+  color:#3B71CA;
+}
 
 /* ul {
   font-weight: bold;
@@ -106,6 +112,14 @@ h3 {
 .recipeGen {
   display: flex;
   justify-content: center;
+}
+
+.like-clicked{
+  color:#3B71CA;
+}
+.like{
+  border: none;
+  color: #332D2D;
 }
 
 .hide {

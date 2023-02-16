@@ -7,11 +7,11 @@ let btn1 = document.querySelector(".button1");
 let cardBody1 = document.querySelector(".card1");
 let p2El = document.createElement("p");
 let pEl = document.createElement("p");
+let likeBtn = document.querySelector(".fa-thumbs-up");
 let emptyString = document.querySelector(".pClass");
 let ingredientEl = document.querySelector(".instructions");
 let cardTranslateEl = document.querySelector(".cardTranslate")
 let translatePel = document.querySelector (".card-text")
-
 // api key
 const apiKey = "1fce12db04a04be5be21bfb6692f4d2b";
 
@@ -60,7 +60,6 @@ searchButton.addEventListener("click", function (e) {
           for (let i = 0; i < info.extendedIngredients.length; i++) {
             pEl = document.createElement("p");
             pEl.classList.add("pClass");
-            let emptyString = document.querySelector(".pClass");
             // emptyString.textContent = "";
             ingredientEl.textContent = info.extendedIngredients[i].original;
             }
@@ -106,7 +105,32 @@ function textTranslate(translatedText){
 }
 
 
+// variable to set local storage on load.
+let btnLiked = localStorage.getItem("liked");
+// if the like button is clicked on load run like function
+if (btnLiked === "enabled"){
+  like();
+}
+
+// function for like class
+function like() {
+  likeBtn.classList.add("like-clicked");
+  localStorage.setItem("liked", "enabled");
+}
+// function for dislike class
+function dislike() {
+  likeBtn.classList.remove("like-clicked");
+  localStorage.setItem("liked", null);
+}
 
 
+// event listener to get local storage on click
+// if statement to determine whether its been liked or not.
+likeBtn.addEventListener("click", function () {
+  btnLiked = localStorage.getItem("liked");
+  if (btnLiked !== "enabled") {
+    like();
+  } else { dislike();
 
-   
+  }
+});
