@@ -15,7 +15,7 @@ let cocktailPara = document.querySelector(".card-text");
 let cocktailHeader = document.querySelector(".card-title");
 let cocktailCard = document.querySelector(".card2");
 // api key
-const apiKey = "1fce12db04a04be5be21bfb6692f4d2b";
+const apiKey = "cd8d4115f8c64fd0859f8a90e0d57eb7";
 
 // event listener that fires off fetch requests on click.
 searchButton.addEventListener("click", function (e) {
