@@ -69,10 +69,10 @@ Getting started with iRecipe is easy. Simply click the live Site URL link and st
 
 ## Author
 
--Adam Willetts
--Ahme Oshiokhai
--Sandra Guerra
--Tuki Samuel
+- Adam Willetts
+- Ahme Oshiokhai
+- Sandra Guerra
+- Tuki Samuel
  
 
 
