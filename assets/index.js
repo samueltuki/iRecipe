@@ -34,8 +34,6 @@ searchButton.addEventListener("click", function (e) {
     .then((response) => response.json())
     .then((response) => {
       let menuId = response.results[0].id;
-      // console.log(menuId);
-
       // fetch request we pass id into to get instructions and ingredients
       fetch(
         "https://api.spoonacular.com/recipes/" +
@@ -62,7 +60,6 @@ searchButton.addEventListener("click", function (e) {
           for (let i = 0; i < info.extendedIngredients.length; i++) {
             pEl = document.createElement("p");
             pEl.classList.add("pClass");
-            // emptyString.textContent = "";
             pEl.textContent = info.extendedIngredients[i].original;
             ingredientEl.append(pEl);
           }
@@ -70,16 +67,8 @@ searchButton.addEventListener("click", function (e) {
     });
 });
 
-// let body = {
-//   ingredients: [
-//     "0.5 fluid ounces gin",
-//     "0.5 fluid ounce dry vermouth",
-//     "1 cup ice ",
-//     "2 pickled pearl onions, drained ",
-//   ],
-//   name: "gibson cocktail",
-// };
 
+// event listener that on click runs random cocktail function
 cocktailBtn.addEventListener("click", randomCocktail);
 
 // function that gives random cocktails and appends to page.
@@ -105,49 +94,6 @@ function randomCocktail() {
       cocktailHeader.textContent = response.body[0].name;
     });
 }
-
-//  for (let j = 0; j < body.ingredients.length; j++) {
-//     let cocktailPara = document.createElement("p");
-//     cocktailPara.textContent = body.ingredients[j];
-//     cocktailCard.append(cocktailPara);
-//   }
-//   cocktailHeader.textContent = body.name;
-
-// like button
-// function googleTranslateElementInit() {
-//   new google.translate.TranslateElement(
-//     { pageLanguage: "en" },
-//     "google_translate_element"
-//   );
-// }
-
-// function textTranslate(translatedText) {
-//   const encodedParams = new URLSearchParams();
-//   encodedParams.append("q", translatedText);
-//   encodedParams.append("target", "es");
-//   encodedParams.append("source", "en");
-
-// const options = {
-//   method: "POST",
-//   headers: {
-//     "content-type": "application/x-www-form-urlencoded",
-//     "Accept-Encoding": "application/gzip",
-//     "X-RapidAPI-Key": "23ab0c932bmshed8a9913934891fp1202b4jsn82d80a03539c",
-//     "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
-//   },
-//   body: encodedParams,
-// };
-
-//   fetch(
-//     "https://google-translate1.p.rapidapi.com/language/translate/v2",
-//     options
-//   )
-//     .then((response) => response.json())
-//     .then((response) => console.log(response))
-//     .catch((err) => console.error(err));
-//   cardTranslateEl.textContent = textTranslate(response.translate);
-//   translatePel.append(cardTranslateEl);
-// }
 
 // variable to set local storage on load.
 let btnLiked = localStorage.getItem("liked");
