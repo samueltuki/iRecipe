@@ -61,8 +61,10 @@ searchButton.addEventListener("click", function (e) {
             pEl = document.createElement("p");
             pEl.classList.add("pClass");
             // emptyString.textContent = "";
-            ingredientEl.textContent = info.extendedIngredients[i].original;
-            }
+            pEl.textContent = info.extendedIngredients[i].original;
+            ingredientEl.append(pEl);
+          }
+
          
         });
 
