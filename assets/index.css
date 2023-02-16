@@ -75,6 +75,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+   /* background-image: linear-gradient(rgba(255, 255, 255, 0.889), rgb(0, 0, 0));  */
   color: rgb(0, 0, 0);
 }
 
@@ -185,12 +186,7 @@ a.hover-effect:hover {
   color: white !important;
 }
 
-<<<<<<< HEAD
-
-.nav-link {
-=======
 /* .nav-link {
->>>>>>> c60c88dfe23899d0830132acf9ab12de37fa7b0a
   color: white;
   float: right;
   margin: -10px;

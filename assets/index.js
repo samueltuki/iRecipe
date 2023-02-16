@@ -9,6 +9,8 @@ let p2El = document.createElement("p");
 let pEl = document.createElement("p");
 let emptyString = document.querySelector(".pClass");
 let ingredientEl = document.querySelector(".instructions");
+let cardTranslateEl = document.querySelector(".cardTranslate")
+let translatePel = document.querySelector (".card-text")
 
 // api key
 const apiKey = "1fce12db04a04be5be21bfb6692f4d2b";
@@ -52,8 +54,7 @@ searchButton.addEventListener("click", function (e) {
            imgRecipe1.src = info.image;
            // appends list of instructions
            p2El.innerHTML = info.instructions;
-           
-           cardBody1.append(p2El);
+           cardBody1.append(p2El)
 
           // for loop that dynamicaly creates p elements and appends each ingredient of array to page
           for (let i = 0; i < info.extendedIngredients.length; i++) {
@@ -61,47 +62,51 @@ searchButton.addEventListener("click", function (e) {
             pEl.classList.add("pClass");
             let emptyString = document.querySelector(".pClass");
             // emptyString.textContent = "";
-            pEl.textContent = info.extendedIngredients[i].original;
-            ingredientEl.append(pEl);
-            
-          }
+            ingredientEl.textContent = info.extendedIngredients[i].original;
+            }
          
-       
-
         });
 
-      
     });
-
-    
+  
 });
 
-// function translateText(translatedText){
 
 
-//   const encodedParams = new URLSearchParams();
-//   encodedParams.append("source", "en");
-//   encodedParams.append("target", "es");
-//   encodedParams.append("q",  translatedText);
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
 
-//   const options = {
-//     method: 'POST',
-//     headers: {
-//       'content-type': 'application/x-www-form-urlencoded',
-//       'Accept-Encoding': 'application/gzip',
-//       'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
-//       'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-//     },
-//     body: encodedParams
-//   };
+function textTranslate(translatedText){
 
-//   fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
-//     .then(response => response.json())
-//     .then(response => console.log(response))
-//     .catch(err => console.error(err));
+  const encodedParams = new URLSearchParams();
+  encodedParams.append("q", translatedText);
+  encodedParams.append("target", "es");
+  encodedParams.append("source", "en");
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded',
+      'Accept-Encoding': 'application/gzip',
+      'X-RapidAPI-Key': '23ab0c932bmshed8a9913934891fp1202b4jsn82d80a03539c',
+      'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+    },
+    body: encodedParams
+  };
+
+  fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    .catch(err => console.error(err));
+    cardTranslateEl.textContent = textTranslate(response.translate);
+    translatePel.append(cardTranslateEl)
+    ;
+  
+}
 
 
 
 
 
-// }
+   
