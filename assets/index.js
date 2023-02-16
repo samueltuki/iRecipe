@@ -80,8 +80,10 @@ let body = {
   name: "gibson cocktail",
 };
 
-cocktailBtn.addEventListener("click", function () {});
+cocktailBtn.addEventListener("click", randomCocktail);
 
+
+// function that gives random coctails and appends to page.
 function randomCocktail() {
   for (let j = 0; j < body.ingredients.length; j++) {
     let cocktailPara = document.createElement("p");
@@ -90,9 +92,6 @@ function randomCocktail() {
   }
   cocktailHeader.textContent = body.name;
 }
-
-randomCocktail();
-
 // const options = {
 // 	method: 'GET',
 // 	headers: {
