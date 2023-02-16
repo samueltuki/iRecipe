@@ -36,7 +36,9 @@ iRecipe is an ideal app for a wide range of users, including home cooks, food bl
 ## Screenshot
 
 
-![]
+<img src="./assets/images/samueltuki.github.io_iRecipe_.png" alt="">
+<img src="./assets/images/samueltuki.github.io_iRecipe_ (1).png" alt="">
+<img src="./assets/images/samueltuki.github.io_iRecipe_ (2).png" alt="">
 
 
 ## Tech Stack
