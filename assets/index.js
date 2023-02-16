@@ -56,7 +56,6 @@ searchButton.addEventListener("click", function (e) {
           imgRecipe1.src = info.image;
           // appends list of instructions
           p2El.innerHTML = info.instructions;
-
           cardBody1.append(p2El);
 
           // for loop that dynamicaly creates p elements and appends each ingredient of array to page
@@ -71,37 +70,28 @@ searchButton.addEventListener("click", function (e) {
     });
 });
 
-
-
-
 let body = {
-ingredients:[
-"0.5 fluid ounces gin",
-"0.5 fluid ounce dry vermouth",
-"1 cup ice ",
-"2 pickled pearl onions, drained "],
-name: 
-"gibson cocktail"
+  ingredients: [
+    "0.5 fluid ounces gin",
+    "0.5 fluid ounce dry vermouth",
+    "1 cup ice ",
+    "2 pickled pearl onions, drained ",
+  ],
+  name: "gibson cocktail",
+};
+
+cocktailBtn.addEventListener("click", function () {});
+
+function randomCocktail() {
+  for (let j = 0; j < body.ingredients.length; j++) {
+    let cocktailPara = document.createElement("p");
+    cocktailPara.textContent = body.ingredients[j];
+    cocktailCard.append(cocktailPara);
+  }
+  cocktailHeader.textContent = body.name;
 }
 
-
-
-
-
-cocktailBtn.addEventListener("click",function(){
-
-})
-
-function randomCocktail(){
-  for (let j = 0; j < body.ingredients.length; j ++){
-let cocktailPara = document.createElement("p");
-cocktailPara.textContent = body.ingredients[j];
-cocktailCard.append(cocktailPara)};
-cocktailHeader.textContent = body.name;
-  }
-
 randomCocktail();
-
 
 // const options = {
 // 	method: 'GET',
@@ -115,18 +105,46 @@ randomCocktail();
 // 	.then(response => response.json())
 // 	.then(response => console.log(response))
 
-
-
-
-
-
-
 // like button
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "en" },
+    "google_translate_element"
+  );
+}
+
+function textTranslate(translatedText) {
+  const encodedParams = new URLSearchParams();
+  encodedParams.append("q", translatedText);
+  encodedParams.append("target", "es");
+  encodedParams.append("source", "en");
+
+  const options = {
+    method: "POST",
+    headers: {
+      "content-type": "application/x-www-form-urlencoded",
+      "Accept-Encoding": "application/gzip",
+      "X-RapidAPI-Key": "23ab0c932bmshed8a9913934891fp1202b4jsn82d80a03539c",
+      "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
+    },
+    body: encodedParams,
+  };
+
+  fetch(
+    "https://google-translate1.p.rapidapi.com/language/translate/v2",
+    options
+  )
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    .catch((err) => console.error(err));
+  cardTranslateEl.textContent = textTranslate(response.translate);
+  translatePel.append(cardTranslateEl);
+}
 
 // variable to set local storage on load.
 let btnLiked = localStorage.getItem("liked");
 // if the like button is clicked on load run like function
-if (btnLiked === "enabled"){
+if (btnLiked === "enabled") {
   like();
 }
 
@@ -141,14 +159,13 @@ function dislike() {
   localStorage.setItem("liked", null);
 }
 
-
 // event listener to get local storage on click
 // if statement to determine whether its been liked or not.
 likeBtn.addEventListener("click", function () {
   btnLiked = localStorage.getItem("liked");
   if (btnLiked !== "enabled") {
     like();
-  } else { dislike();
-
+  } else {
+    dislike();
   }
 });
