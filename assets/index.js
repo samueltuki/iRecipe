@@ -93,5 +93,7 @@ searchButton.addEventListener("click", function (e) {
 //     .catch(err => console.error(err));
 
 function like (){
-  likeBtn.classList.add();
+  likeBtn.classList.add("like-clicked");
 }
+
+like();

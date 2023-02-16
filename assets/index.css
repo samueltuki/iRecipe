@@ -113,7 +113,9 @@ h3 {
   justify-content: center;
 }
 
-
+.like-clicked{
+  color:#3B71CA;
+}
 .like{
   border: none;
 }
