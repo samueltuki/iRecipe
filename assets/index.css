@@ -10,21 +10,11 @@ html {
 
 body {
   background-image: url(./img/image-3.png);
-  /* background-image: linear-gradient(rgba(255, 255, 255, 0.889), rgb(77, 0, 193)); */
   background-size: cover;
   animation: scroll-bg 10s linear infinite;
 }
-/* @keyframes scroll-bg {
-    10%{
-        background-position: 0 0;
-    }
-    100%{
-        background-position: 0 -100%;
-    }
-} */
 
 /* Navigation Bar */
-
 .bg-dark {
   opacity: 0.9;
 }
@@ -54,20 +44,6 @@ body {
   color:#3B71CA;
 }
 
-/* ul {
-  font-weight: bold;
-  display: flex;
-}
-
-.nav-link {
-  color: white;
-}
-
-a:hover {
-  color: rgb(246, 246, 3);
-  text-decoration: underline;
-} */
-
 /* Hero Section  */
 
 .jumbo-margin {
@@ -81,7 +57,6 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-   /* background-image: linear-gradient(rgba(255, 255, 255, 0.889), rgb(0, 0, 0));  */
   color: rgb(0, 0, 0);
 }
 
@@ -98,56 +73,35 @@ a:hover {
   color: rgb(0, 0, 0);
 }
 
-/* #getInspired .card img{
-    object-fit: cover;
-    object-position: 50% 50%;
-    height: 200px;
-} */
 
 h3 {
   color: rgb(252, 252, 252);
   font-weight: 700;
 }
-
+/* card styles */
+h5 {
+  font-size: 28px;
+}
 .recipeGen {
   display: flex;
   justify-content: center;
 }
-
+/* style for like button clicked */
 .like-clicked{
   color:#3B71CA;
 }
+/* original color for like button */
 .like{
   border: none;
   color: #332D2D;
 }
-
+/* class to hide card until search button clicked */
 .hide {
   display: none !important;
 }
 
-/* #logo {
-  display: flex-end;
-  flex-direction: row;
-  padding: 25px;
-  font-size:33px;
-}
 
-#logo > a:hover {
-  text-decoration: underline;
-  color: rgb(246, 246, 3);
-  cursor: pointer;
-}
-
-.nav.justify-content-center {
-  display: flex;
-  flex-direction: row;
-  float: right;
-  margin: -55px 10%;
-  justify-content: space-between;
-  font-size: 20px;
-} */
-
+/* search styles */
 .SearchContainer {
   margin-top: 5px;
   margin-left: 5px;
@@ -157,7 +111,6 @@ h3 {
   display: inline-block;
   align-content: center;
 }
-
 .card-body {
   text-align: center;
   font-size: 18px;
@@ -165,14 +118,6 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-
-.SearchContainer {
-  object-fit: cover;
-
-  object-position: 50% 50%;
-  height: 280px;
-}
-
 
 /* footer */
 
@@ -200,14 +145,7 @@ a.hover-effect:hover {
   color: white !important;
 }
 
-/* .nav-link {
-  color: white;
-  float: right;
-  margin: -10px;
-  padding: -20px;
-} */
-
-
+/* testimonials */
 .testimonials {
   padding: 50px;
   background-color: #f2f2f2;
@@ -252,6 +190,3 @@ a.hover-effect:hover {
   margin-bottom: 20px;
 }
 
-h5{
-  font-size: 28px;
-}
