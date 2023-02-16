@@ -94,6 +94,9 @@ searchButton.addEventListener("click", function (e) {
 
 function like (){
   likeBtn.classList.add("like-clicked");
+  localStorage.setItem("liked","enabled");
 }
 
-like();
+function dislike(){
+  likeBtn.classList.remove("like-clicked");
+}
