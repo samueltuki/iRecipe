@@ -84,7 +84,6 @@ function randomCocktail() {
   fetch("https://cocktails3.p.rapidapi.com/random", options)
     .then((response) => response.json())
     .then((response) => {
-      console.log(response);
       cocktailCard.textContent = "";
       for (let j = 0; j < response.body[0].ingredients.length; j++) {
         let cocktailPara = document.createElement("p");
