@@ -70,75 +70,84 @@ searchButton.addEventListener("click", function (e) {
     });
 });
 
-let body = {
-  ingredients: [
-    "0.5 fluid ounces gin",
-    "0.5 fluid ounce dry vermouth",
-    "1 cup ice ",
-    "2 pickled pearl onions, drained ",
-  ],
-  name: "gibson cocktail",
-};
+// let body = {
+//   ingredients: [
+//     "0.5 fluid ounces gin",
+//     "0.5 fluid ounce dry vermouth",
+//     "1 cup ice ",
+//     "2 pickled pearl onions, drained ",
+//   ],
+//   name: "gibson cocktail",
+// };
 
 cocktailBtn.addEventListener("click", randomCocktail);
 
-
-// function that gives random coctails and appends to page.
+// function that gives random cocktails and appends to page.
 function randomCocktail() {
-  for (let j = 0; j < body.ingredients.length; j++) {
-    let cocktailPara = document.createElement("p");
-    cocktailPara.textContent = body.ingredients[j];
-    cocktailCard.append(cocktailPara);
-  }
-  cocktailHeader.textContent = body.name;
-}
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'e48b4fae3bmshf247b3bace5571dp1e495fjsn2631d49c5c2e',
-// 		'X-RapidAPI-Host': 'cocktails3.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://cocktails3.p.rapidapi.com/random', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-
-// like button
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-
-function textTranslate(translatedText) {
-  const encodedParams = new URLSearchParams();
-  encodedParams.append("q", translatedText);
-  encodedParams.append("target", "es");
-  encodedParams.append("source", "en");
-
   const options = {
-    method: "POST",
+    method: "GET",
     headers: {
-      "content-type": "application/x-www-form-urlencoded",
-      "Accept-Encoding": "application/gzip",
-      "X-RapidAPI-Key": "23ab0c932bmshed8a9913934891fp1202b4jsn82d80a03539c",
-      "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
+      "X-RapidAPI-Key": "e48b4fae3bmshf247b3bace5571dp1e495fjsn2631d49c5c2e",
+      "X-RapidAPI-Host": "cocktails3.p.rapidapi.com",
     },
-    body: encodedParams,
   };
 
-  fetch(
-    "https://google-translate1.p.rapidapi.com/language/translate/v2",
-    options
-  )
+  fetch("https://cocktails3.p.rapidapi.com/random", options)
     .then((response) => response.json())
-    .then((response) => console.log(response))
-    .catch((err) => console.error(err));
-  cardTranslateEl.textContent = textTranslate(response.translate);
-  translatePel.append(cardTranslateEl);
+    .then((response) => {
+      console.log(response);
+      cocktailCard.textContent = "";
+      for (let j = 0; j < response.body[0].ingredients.length; j++) {
+        let cocktailPara = document.createElement("p");
+        cocktailPara.textContent = response.body[0].ingredients[j];
+        cocktailCard.append(cocktailPara);
+      }
+      cocktailHeader.textContent = response.body[0].name;
+    });
 }
+
+//  for (let j = 0; j < body.ingredients.length; j++) {
+//     let cocktailPara = document.createElement("p");
+//     cocktailPara.textContent = body.ingredients[j];
+//     cocktailCard.append(cocktailPara);
+//   }
+//   cocktailHeader.textContent = body.name;
+
+// like button
+// function googleTranslateElementInit() {
+//   new google.translate.TranslateElement(
+//     { pageLanguage: "en" },
+//     "google_translate_element"
+//   );
+// }
+
+// function textTranslate(translatedText) {
+//   const encodedParams = new URLSearchParams();
+//   encodedParams.append("q", translatedText);
+//   encodedParams.append("target", "es");
+//   encodedParams.append("source", "en");
+
+// const options = {
+//   method: "POST",
+//   headers: {
+//     "content-type": "application/x-www-form-urlencoded",
+//     "Accept-Encoding": "application/gzip",
+//     "X-RapidAPI-Key": "23ab0c932bmshed8a9913934891fp1202b4jsn82d80a03539c",
+//     "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
+//   },
+//   body: encodedParams,
+// };
+
+//   fetch(
+//     "https://google-translate1.p.rapidapi.com/language/translate/v2",
+//     options
+//   )
+//     .then((response) => response.json())
+//     .then((response) => console.log(response))
+//     .catch((err) => console.error(err));
+//   cardTranslateEl.textContent = textTranslate(response.translate);
+//   translatePel.append(cardTranslateEl);
+// }
 
 // variable to set local storage on load.
 let btnLiked = localStorage.getItem("liked");
