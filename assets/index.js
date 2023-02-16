@@ -10,6 +10,8 @@ let pEl = document.createElement("p");
 let likeBtn = document.querySelector(".fa-thumbs-up");
 let emptyString = document.querySelector(".pClass");
 let ingredientEl = document.querySelector(".instructions");
+let cardTranslateEl = document.querySelector(".cardTranslate")
+let translatePel = document.querySelector (".card-text")
 // api key
 const apiKey = "1fce12db04a04be5be21bfb6692f4d2b";
 
@@ -41,19 +43,18 @@ searchButton.addEventListener("click", function (e) {
       )
         .then((response) => response.json())
         .then((info) => {
-          cardTitle1.textContent = "";
-          p2El.innerHTML = "";
-          ingredientEl.textContent = "";
-          // remove hide class to show card on search.
-          hideClass.classList.remove("hide");
-          // displays title
-          cardTitle1.textContent = info.title;
-          // changes image src to image of recipe
-          imgRecipe1.src = info.image;
-          // appends list of instructions
-          p2El.innerHTML = info.instructions;
-
-          cardBody1.append(p2El);
+          cardTitle1.textContent = ""
+          p2El.innerHTML = ""
+          ingredientEl.textContent = ""
+           // remove hide class to show card on search.
+           hideClass.classList.remove("hide");
+           // displays title
+           cardTitle1.textContent = info.title;
+           // changes image src to image of recipe
+           imgRecipe1.src = info.image;
+           // appends list of instructions
+           p2El.innerHTML = info.instructions;
+           cardBody1.append(p2El)
 
           // for loop that dynamicaly creates p elements and appends each ingredient of array to page
           for (let i = 0; i < info.extendedIngredients.length; i++) {
@@ -63,33 +64,47 @@ searchButton.addEventListener("click", function (e) {
             pEl.textContent = info.extendedIngredients[i].original;
             ingredientEl.append(pEl);
           }
+
+         
         });
+
     });
+  
 });
 
-// like button
-// function translateText(translatedText){
 
-//   const encodedParams = new URLSearchParams();
-//   encodedParams.append("source", "en");
-//   encodedParams.append("target", "es");
-//   encodedParams.append("q",  translatedText);
 
-//   const options = {
-//     method: 'POST',
-//     headers: {
-//       'content-type': 'application/x-www-form-urlencoded',
-//       'Accept-Encoding': 'application/gzip',
-//       'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
-//       'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-//     },
-//     body: encodedParams
-//   };
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
 
-//   fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
-//     .then(response => response.json())
-//     .then(response => console.log(response))
-//     .catch(err => console.error(err));
+function textTranslate(translatedText){
+
+  const encodedParams = new URLSearchParams();
+  encodedParams.append("q", translatedText);
+  encodedParams.append("target", "es");
+  encodedParams.append("source", "en");
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded',
+      'Accept-Encoding': 'application/gzip',
+      'X-RapidAPI-Key': '23ab0c932bmshed8a9913934891fp1202b4jsn82d80a03539c',
+      'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+    },
+    body: encodedParams
+  };
+
+  fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    .catch(err => console.error(err));
+    cardTranslateEl.textContent = textTranslate(response.translate);
+    translatePel.append(cardTranslateEl)
+    ;
+  
+}
 
 
 // variable to set local storage on load.
