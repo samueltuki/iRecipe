@@ -51,6 +51,7 @@ iRecipe is an ideal app for a wide range of users, including home cooks, food bl
 - Cocktails API
 - Canva
 - DOM Manipulation
+- Google Translator
 
 
 ## Getting Started
