@@ -10,6 +10,10 @@ let pEl = document.createElement("p");
 let likeBtn = document.querySelector(".fa-thumbs-up");
 let emptyString = document.querySelector(".pClass");
 let ingredientEl = document.querySelector(".instructions");
+let cocktailBtn = document.querySelector(".cocktail");
+let cocktailPara = document.querySelector(".card-text");
+let cocktailHeader = document.querySelector(".card-title");
+let cocktailCard = document.querySelector(".card2");
 // api key
 const apiKey = "1fce12db04a04be5be21bfb6692f4d2b";
 
@@ -67,30 +71,57 @@ searchButton.addEventListener("click", function (e) {
     });
 });
 
+
+
+
+let body = {
+ingredients:[
+"0.5 fluid ounces gin",
+"0.5 fluid ounce dry vermouth",
+"1 cup ice ",
+"2 pickled pearl onions, drained "],
+name: 
+"gibson cocktail"
+}
+
+
+
+
+
+cocktailBtn.addEventListener("click",function(){
+
+})
+
+function randomCocktail(){
+  for (let j = 0; j < body.ingredients.length; j ++){
+let cocktailPara = document.createElement("p");
+cocktailPara.textContent = body.ingredients[j];
+cocktailCard.append(cocktailPara)};
+cocktailHeader.textContent = body.name;
+  }
+
+randomCocktail();
+
+
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'e48b4fae3bmshf247b3bace5571dp1e495fjsn2631d49c5c2e',
+// 		'X-RapidAPI-Host': 'cocktails3.p.rapidapi.com'
+// 	}
+// };
+
+// fetch('https://cocktails3.p.rapidapi.com/random', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+
+
+
+
+
+
+
 // like button
-// function translateText(translatedText){
-
-//   const encodedParams = new URLSearchParams();
-//   encodedParams.append("source", "en");
-//   encodedParams.append("target", "es");
-//   encodedParams.append("q",  translatedText);
-
-//   const options = {
-//     method: 'POST',
-//     headers: {
-//       'content-type': 'application/x-www-form-urlencoded',
-//       'Accept-Encoding': 'application/gzip',
-//       'X-RapidAPI-Key': '151e2cfb22msh8799ac1368fb95cp18192bjsn8c2898361e55',
-//       'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-//     },
-//     body: encodedParams
-//   };
-
-//   fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
-//     .then(response => response.json())
-//     .then(response => console.log(response))
-//     .catch(err => console.error(err));
-
 
 // variable to set local storage on load.
 let btnLiked = localStorage.getItem("liked");
