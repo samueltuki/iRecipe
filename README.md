@@ -8,29 +8,24 @@ iRecipe - Recipe Generator App with Translation Capability
 ## Description 
 
 
-iRecipe is a real-world front-end application app that provides users with access to a large collection of recipes and corresponding images, including international dishes. 
+iRecipe is a real-world front-end application recipe and food image generator app that provides users with access to a large collection of recipes and corresponding images, including international dishes. 
 
+Users can search for recipes based on ingredients and name of the dish, it provides information on ingredients, instructions, and other details for each recipe. It includes a translation feature to view recipes in the user's preferred language.
 
-Users can search for recipes based on ingredients, and dietary restrictions, with information on instructions, cooking time, and other details for each recipe. The app also includes a translation feature to view recipes in the user's preferred language.
+In addition to food recipes, the app also features a random cocktail recipe generator, giving users a chance to explore new and exciting drinks. The app provides images of the finished dishes to help users visualize the recipes and get an idea of what the final product should look like.
 
-In addition to food recipes, iRecipe also features a random cocktail recipe generator, giving users a chance to explore new and exciting drinks. The app provides images of the finished dishes to help visualize the recipes and get an idea of what the final product should look like.
-
-
-iRecipe is an ideal app for a wide range of users, including home cooks, food bloggers, chefs, and anyone else who needs access to a large collection of recipes and images. The app runs in the browser and features dynamically updated HTML and CSS with Bootstrap classes to make it responsive, powered by JavaScript.
-
+iRecipe is an ideal app for a wide range of users, including home cooks, food bloggers, chefs, and anyone else who needs access to a large collection of recipes. The app runs in the browser and features dynamically updated HTML and CSS with Bootstrap classes to make it responsive, powered by JavaScript.
 
 
 
 ## Features
 
 
--Access to a wide collection of recipes and related images
--Search for recipes based on ingredients, cuisine dietary restrictions, and more
--Step-by-step instructions 
--Information on ingredients and other details for each recipe
--Beautiful images of each finished dish
--Translation
--Random cocktail recipe generator
+- Access to a wide collection of recipes and related images
+- Step-by-step instructions 
+- Information on ingredients and other details for each recipe
+- Translation
+- Random cocktail recipe generator
 
 
 ## Screenshot
