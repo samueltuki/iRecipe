@@ -1,5 +1,5 @@
 // html element selectors.
-let searchButton = document.querySelector(".btn-primary");
+let searchButton = document.querySelector(".btn-info");
 let cardTitle1 = document.querySelector(".card-title1");
 let imgRecipe1 = document.querySelector(".imgRecipe1");
 let hideClass = document.querySelector(".searchCard");
@@ -127,4 +127,3 @@ likeBtn.addEventListener("click", function () {
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
-
